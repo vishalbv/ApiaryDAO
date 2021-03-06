@@ -1,0 +1,221 @@
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.links {
+  color: rgba(129, 129, 129, 1);
+}
+.seperator {
+  width: 3px;
+  height: 1em;
+  margin: 0 20px !important;
+  background-color: rgba(204, 204, 204, 1);
+}
+.doCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  font-size: 3vw;
+  font-weight: bold;
+}
+.block {
+  border: 1px solid #4caf50;
+  width: fit-content;
+  border-radius: 4px;
+
+  padding: 2px 20px;
+  color: #4caf50;
+}
+.col {
+  flex-direction: column;
+}
+.top-section div {
+  margin: 2px;
+}
+.lock {
+  overflow: visible;
+  width: 14px;
+  height: 18.2px;
+  padding-right: 10px;
+
+  fill: #f44336;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.top-button {
+  position: absolute;
+  top: 20px;
+  background-color: #f8d252;
+  padding: 10px 16px;
+  border-radius: 5px;
+  right: 2vw;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #f8d252;
+  padding: 6px 16px;
+  border-radius: 5px;
+  width: fit-content;
+  opacity: 1;
+  margin: 1vw;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+.connect {
+  overflow: visible;
+  width: 22px;
+  height: 19.8px;
+  left: 0px;
+  padding-right: 10px;
+  top: 5.257px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.padlock {
+  /* overflow: visible; */
+  padding-right: 10px;
+  fill: #4caf50;
+  /* position: absolute; */
+  width: 19px;
+  height: 19px;
+  left: 0px;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.blocks {
+  height: 300px;
+  width: 190px;
+  margin: 3vw;
+  font-weight: bold;
+  background: #00000010;
+  padding: 1vw;
+}
+.heading {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgba(129, 129, 129, 1);
+}
+.blocks > img {
+  background: #f8d252;
+  border-radius: 200px;
+  width: 100px;
+  margin: 20px;
+}
+
+.Ellipse_4 {
+  width: 42px;
+  height: 42px;
+}
+#Ellipse_4 {
+  fill: rgba(248, 210, 82, 1);
+  cursor: pointer;
+  --web-animation: fadein 0.3s ease-in-out;
+  --web-action-type: page;
+  --web-action-target: ApiaryDAO_page4.html;
+}
+
+.modalView {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+}
+.modalView > div {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.158);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+
+.modalView > div > div {
+  padding-bottom: 5%;
+  position: absolute;
+  top: 20%;
+  left: 33%;
+  width: 36%;
+}
+
+.input-modal {
+  background: #f0f0f0;
+  height: 3.5vw;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.input-modal input {
+  background: #f0f0f0;
+  padding: 5px;
+  border: none;
+}
+.modalView > div > div > div {
+  /* margin-bottom: 20%; */
+  color: white;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgb(255, 255, 255);
+  min-height: 20vh;
+  padding: 10px;
+  /* margin-bottom: 20%; */
+  border-radius: 10px;
+}
+
+.modalView > div > div > div > img:first-child {
+  width: 7vmin;
+  height: 7vmin;
+  object-fit: contain;
+  float: right;
+  margin: 1vw;
+  right: 7vmin;
+  background-color: transparent;
+  z-index: 1;
+  cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
