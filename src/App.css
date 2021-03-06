@@ -45,7 +45,7 @@
 }
 
 .header {
-  font-size: 3vw;
+  font-size: 3em;
   font-weight: bold;
   margin-top: 100px !important;
 }
@@ -256,5 +256,12 @@ input:focus {
   }
   .modalClass input {
     width: 50%;
+  }
+  .input-modal {
+    background: #f0f0f0;
+    height: 10.5vw;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 10px;
   }
 }
