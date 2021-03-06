@@ -1,6 +1,10 @@
 .App {
   text-align: center;
   margin: 20px;
+  font-family: Ubuntu;
+}
+body {
+  overflow-y: hidden;
 }
 
 .App-logo {
@@ -12,6 +16,14 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 .App-header {
@@ -31,7 +43,13 @@
 
 .links {
   color: rgba(129, 129, 129, 1);
+  cursor: pointer;
 }
+
+.links2 {
+  color: rgba(129, 129, 129, 1);
+}
+
 .seperator {
   width: 3px;
   height: 1em;
@@ -45,23 +63,23 @@
 }
 
 .header {
-  font-size: 3em;
+  font-size: 3.8em;
   font-weight: bold;
-  margin-top: 100px !important;
+  margin-top: 30px !important;
 }
 .block {
   border: 1px solid #4caf50;
   width: fit-content;
   border-radius: 4px;
 
-  padding: 2px 20px;
+  padding: 4px 20px;
   color: #4caf50;
 }
 .col {
   flex-direction: column;
 }
 .top-section div {
-  margin: 2px;
+  margin: 4px;
 }
 .lock {
   overflow: visible;
@@ -87,6 +105,7 @@
   padding: 6px 16px;
   border-radius: 5px;
   width: fit-content;
+  color: black;
   opacity: 1;
   margin: 1vw;
   cursor: pointer;
@@ -169,16 +188,22 @@
   padding-bottom: 5%;
   position: absolute;
   top: 20%;
-  left: 33%;
-  width: 36%;
+  left: 38%;
+  width: 430px;
 }
 
 .input-modal {
+  /* background: #f0f0f0; */
+
+  outline: none;
+  margin-top: 10px;
+}
+.input-modal > div:first-child {
   background: #f0f0f0;
   height: 3.5vw;
-  outline: none;
   border-radius: 5px;
-  margin-top: 10px;
+
+  /* padding: 0 10px; */
 }
 textarea:focus,
 input:focus {
@@ -187,6 +212,10 @@ input:focus {
 .input-modal input {
   background: #f0f0f0;
   padding: 5px;
+  width: 50%;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #00000099 !important;
   border: none;
 }
 .modalView > div > div > div {
@@ -195,14 +224,16 @@ input:focus {
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
   background-color: rgb(255, 255, 255);
   min-height: 20vh;
-  padding: 10px;
+  border: 2px solid #f8d252;
+
+  padding: 20px;
   /* margin-bottom: 20%; */
   border-radius: 10px;
 }
 .modalClass {
   display: flex;
   align-items: center;
-  height: 30vh;
+  height: 25vh;
   justify-content: center;
 }
 
@@ -230,11 +261,12 @@ input:focus {
 @media only screen and (max-width: 600px) {
   .top-button {
     position: absolute;
-    top: 60px;
+    top: 8px;
     background-color: #f8d252;
     padding: 10px 16px;
     border-radius: 5px;
     right: 3vw;
+    font-size: 01em;
     cursor: pointer;
   }
 
@@ -252,16 +284,28 @@ input:focus {
     justify-content: center;
   }
   .modalClass > div > div {
-    margin: 20px;
+    margin: 10px;
   }
   .modalClass input {
     width: 50%;
   }
-  .input-modal {
-    background: #f0f0f0;
+  .input-modal > div:first-child {
     height: 10.5vw;
-    outline: none;
-    border-radius: 5px;
-    margin-top: 10px;
+  }
+
+  .input-modal {
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+
+  .linkage {
+    width: 60%;
+    margin-left: 20px !important;
+  }
+  .seperator {
+    width: 3px;
+    height: 1em;
+    margin: 0 10px !important;
+    background-color: rgba(204, 204, 204, 1);
   }
 }

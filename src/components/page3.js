@@ -4,14 +4,19 @@ import Modal from "./modal";
 
 const Page3 = () => {
   const [modal, setModal] = useState(false);
-  const [val, setVal] = useState("");
+  const [val, setVal] = useState(0);
 
   return (
     <div>
       <div className="top-section">
         <div
           className="top-button doCenter"
-          style={{ background: "#00000015", height: "1.1vw", fontSize: ".8em" }}
+          style={{
+            background: "#00000015",
+            height: "1.1vw",
+            fontSize: ".8em",
+            // marginTop: "-4px",
+          }}
         >
           <div
             style={{
@@ -25,15 +30,33 @@ const Page3 = () => {
           <span>0x8q..3sd5</span>
         </div>
         <div className="doCenter">
-          <div className="links">Docs</div>
+          <div
+            className="links"
+            onClick={() => (window.location.href = "docs.dao.com")}
+          >
+            Docs
+          </div>
           <div className="seperator"></div>
-          <div className="links">Telegram</div>
+          <div
+            className="links"
+            onClick={() => (window.location.href = "https://t.me/DAO")}
+          >
+            Telegram
+          </div>
           <div className="seperator"></div>
-          <div className="links">Twitter</div>
+          <div
+            className="links"
+            onClick={() => (window.location.href = "https://twitter.com/DAO")}
+          >
+            Twitter
+          </div>
         </div>
         <div className="doCenter col">
           <div className="header">ApiaryDAO</div>
-          <div className="links" style={{ fontSize: "1.2em" }}>
+          <div
+            className="links2"
+            style={{ fontSize: "1.4em", marginTop: "-4px" }}
+          >
             Stake APYD to earn HivePoints
           </div>
           <div
@@ -50,12 +73,12 @@ const Page3 = () => {
           </div>
 
           <div
-            className="links"
+            className="links2"
             style={{ fontSize: "1em", fontWeight: "bold" }}
           >
             STAKING (CLAIMING) NEEDS UNLOCK
           </div>
-          <div className="links" style={{ fontSize: ".9em" }}>
+          <div className="links2" style={{ fontSize: ".9em" }}>
             34287 Blocks ( - 3 Days )
           </div>
         </div>
