@@ -6,16 +6,7 @@ const Modal = ({ children, show, styleName, toggleShow }) => {
       <div>
         <div>
           <div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                height: "30vh",
-                justifyContent: "center",
-              }}
-            >
-              {children}
-            </div>
+            <div className="modalClass">{children}</div>
           </div>
         </div>
       </div>

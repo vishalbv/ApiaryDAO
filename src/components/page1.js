@@ -1,11 +1,17 @@
 import React, { Component } from "react";
+import { useHistory } from "react-router-dom";
 import { BlockB, BlockA } from "./blocks";
 
 const Page1 = () => {
+  let history = useHistory();
+
   return (
     <div>
       <div className="top-section">
-        <div className="top-button doCenter">
+        <div
+          className="top-button doCenter"
+          onClick={() => history.push("/page2")}
+        >
           <svg class="connect" viewBox="2 3 22 19.8">
             <path
               id="connect"

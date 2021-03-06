@@ -71,3 +71,45 @@ export const BlockA = ({ status }) => {
     </div>
   );
 };
+
+export const SubModal = ({ setModal, val, setVal }) => {
+  return (
+    <div>
+      <div style={{ color: "#818181", fontSize: ".8em" }}>
+        <span>Deposit BEE - BNB</span>
+        <span style={{ marginLeft: "4vw" }}>0.0000 BEE - BNB Available</span>
+      </div>
+      <div className="doCenter input-modal">
+        <div>
+          <input
+            type="number"
+            value={val}
+            onChange={(e) => setVal(e.target.value)}
+          />
+          <span
+            style={{
+              fontSize: "1.1em",
+              fontWeight: "bold",
+              color: "black",
+            }}
+          >
+            BEE - BNB
+          </span>
+        </div>
+        <div className="button">MAX</div>
+      </div>
+      <div className="doCenter">
+        <div
+          className="button"
+          style={{ background: "#cccccc" }}
+          onClick={() => setModal(false)}
+        >
+          CANCEL
+        </div>
+        <div className="button" onClick={() => setModal(false)}>
+          CONFIRM
+        </div>
+      </div>
+    </div>
+  );
+};

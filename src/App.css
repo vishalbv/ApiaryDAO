@@ -47,6 +47,7 @@
 .header {
   font-size: 3vw;
   font-weight: bold;
+  margin-top: 100px !important;
 }
 .block {
   border: 1px solid #4caf50;
@@ -198,6 +199,12 @@ input:focus {
   /* margin-bottom: 20%; */
   border-radius: 10px;
 }
+.modalClass {
+  display: flex;
+  align-items: center;
+  height: 30vh;
+  justify-content: center;
+}
 
 .modalView > div > div > div > img:first-child {
   width: 7vmin;
@@ -217,5 +224,37 @@ input:focus {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .top-button {
+    position: absolute;
+    top: 60px;
+    background-color: #f8d252;
+    padding: 10px 16px;
+    border-radius: 5px;
+    right: 3vw;
+    cursor: pointer;
+  }
+
+  .modalView > div > div {
+    padding-bottom: 5%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+  }
+  .modalClass {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    justify-content: center;
+  }
+  .modalClass > div > div {
+    margin: 20px;
+  }
+  .modalClass input {
+    width: 50%;
   }
 }
