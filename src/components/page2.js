@@ -5,15 +5,24 @@ import Modal from "./modal";
 
 const Page2 = () => {
   const [modal, setModal] = useState(false);
-  const [val, setVal] = useState(0);
+  const [val, setVal] = useState(undefined);
+  const [status, setStatus] = useState(0);
   let history = useHistory();
-
+  const openPopup = (val) => {
+    setStatus(val);
+    setModal(true);
+  };
   return (
     <div>
       <div className="top-section">
         <div
           className="top-button doCenter"
-          style={{ background: "#00000015", height: "1.1vw", fontSize: ".8em" }}
+          style={{
+            background: "#00000015",
+            height: ".8vw",
+            fontSize: ".9em",
+            border: "1px solid #f8d252",
+          }}
         >
           <div
             style={{
@@ -80,7 +89,7 @@ const Page2 = () => {
             className="links2"
             style={{ fontSize: "1em", fontWeight: "bold" }}
           >
-            STAKING (CLAIMING) NEEDS UNLOCK
+            STAKING (CLAIMING) RESETS UNLOCK
           </div>
           <div className="links2" style={{ fontSize: ".9em" }}>
             34287 Blocks ( - 3 Days )
@@ -89,7 +98,7 @@ const Page2 = () => {
       </div>
       <div className="doCenter">
         <BlockA status={false} />
-        <BlockB status={false} setModal={setModal} />
+        <BlockB status={false} openPopup={openPopup} val={true} />
       </div>
       <Modal
         toggleShow={() => {
@@ -98,7 +107,12 @@ const Page2 = () => {
         }}
         show={modal}
       >
-        <SubModal setModal={setModal} val={val} setVal={setVal} />
+        <SubModal
+          setModal={setModal}
+          val={val}
+          setVal={setVal}
+          status={status}
+        />
       </Modal>
     </div>
   );

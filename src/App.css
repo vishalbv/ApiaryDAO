@@ -4,7 +4,8 @@
   font-family: Ubuntu;
 }
 body {
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
+  font-size: 13px;
 }
 
 .App-logo {
@@ -42,12 +43,16 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .links {
-  color: rgba(129, 129, 129, 1);
+  color: rgba(129, 129, 129, 0.466);
+  font-size: 1.19em;
   cursor: pointer;
 }
 
 .links2 {
-  color: rgba(129, 129, 129, 1);
+  color: rgba(129, 129, 129, 0.685);
+}
+.linkage {
+  margin-top: 32px !important;
 }
 
 .seperator {
@@ -65,7 +70,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .header {
   font-size: 3.8em;
   font-weight: bold;
-  margin-top: 30px !important;
+  margin-top: 130px !important;
 }
 .block {
   border: 1px solid #4caf50;
@@ -79,12 +84,12 @@ input[type="number"]::-webkit-outer-spin-button {
   flex-direction: column;
 }
 .top-section div {
-  margin: 4px;
+  margin: 2px;
 }
 .lock {
   overflow: visible;
-  width: 14px;
-  height: 18.2px;
+  width: 12px;
+  height: 15.2px;
   padding-right: 10px;
 
   fill: #f44336;
@@ -93,10 +98,12 @@ input[type="number"]::-webkit-outer-spin-button {
 .top-button {
   position: absolute;
   top: 20px;
+  font-size: 1.4em;
+  font-weight: bold;
   background-color: #f8d252;
   padding: 10px 16px;
   border-radius: 5px;
-  right: 2vw;
+  right: 15vw;
   cursor: pointer;
 }
 
@@ -107,6 +114,8 @@ input[type="number"]::-webkit-outer-spin-button {
   width: fit-content;
   color: black;
   opacity: 1;
+
+  font-weight: 800;
   margin: 1vw;
   cursor: pointer;
 }
@@ -114,6 +123,23 @@ input[type="number"]::-webkit-outer-spin-button {
 .button:hover {
   opacity: 0.8;
 }
+
+.button2 {
+  background-color: #f8d252;
+  padding: 6px 16px;
+  border-radius: 5px;
+  width: fit-content;
+  color: #2b221f;
+  opacity: 1;
+  font-weight: 800;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.button2:hover {
+  opacity: 0.8;
+}
+
 .connect {
   overflow: visible;
   width: 22px;
@@ -129,30 +155,31 @@ input[type="number"]::-webkit-outer-spin-button {
   padding-right: 10px;
   fill: #4caf50;
   /* position: absolute; */
-  width: 19px;
-  height: 19px;
+  width: 15px;
+  height: 15px;
   left: 0px;
   top: 0px;
   transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .blocks {
-  height: 300px;
-  width: 190px;
-  margin: 3vw;
+  min-height: 250px;
+  width: 170px;
+  margin: 2vw;
+  font-size: 1.2em;
   font-weight: bold;
-  background: #00000010;
-  padding: 1vw;
+  background: #66666610;
+  padding: 0.7vw 0 0 0;
 }
 .heading {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
   color: rgba(129, 129, 129, 1);
 }
 .blocks > img {
   background: #f8d252;
   border-radius: 200px;
-  width: 100px;
+  width: 85px;
   margin: 20px;
 }
 
@@ -189,7 +216,7 @@ input[type="number"]::-webkit-outer-spin-button {
   position: absolute;
   top: 20%;
   left: 38%;
-  width: 430px;
+  width: 340px;
 }
 
 .input-modal {
@@ -205,6 +232,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
   /* padding: 0 10px; */
 }
+
+#inputID::placeholder {
+  color: #00000044;
+  /* opacity: 1; */
+}
+
 textarea:focus,
 input:focus {
   outline: none;
@@ -223,17 +256,17 @@ input:focus {
   color: white;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
   background-color: rgb(255, 255, 255);
-  min-height: 20vh;
+  min-height: 15vh;
   border: 2px solid #f8d252;
 
-  padding: 20px;
+  padding: 10px 10px 10px 20px;
   /* margin-bottom: 20%; */
   border-radius: 10px;
 }
 .modalClass {
   display: flex;
   align-items: center;
-  height: 25vh;
+  height: 20vh;
   justify-content: center;
 }
 
@@ -249,6 +282,31 @@ input:focus {
   cursor: pointer;
 }
 
+.input-box {
+  background: #f0f0f0;
+  /* height: 3.5vw; */
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.input-box input {
+  background: #f0f0f0;
+  padding: 5px;
+  width: 50%;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #00000099 !important;
+  border: none;
+}
+
+.max {
+  position: relative;
+  color: #2c2320cc;
+
+  top: -14px;
+  height: 25px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -261,7 +319,7 @@ input:focus {
 @media only screen and (max-width: 600px) {
   .top-button {
     position: absolute;
-    top: 8px;
+    top: 20px;
     background-color: #f8d252;
     padding: 10px 16px;
     border-radius: 5px;
@@ -274,8 +332,8 @@ input:focus {
     padding-bottom: 5%;
     position: absolute;
     top: 20%;
-    left: 5%;
-    width: 90%;
+    left: 11.5%;
+    width: 77%;
   }
   .modalClass {
     display: flex;
@@ -283,9 +341,9 @@ input:focus {
     height: 20vh;
     justify-content: center;
   }
-  .modalClass > div > div {
+  /* .modalClass > div > div {
     margin: 10px;
-  }
+  } */
   .modalClass input {
     width: 50%;
   }
@@ -297,7 +355,13 @@ input:focus {
     width: 100% !important;
     margin-bottom: 10px !important;
   }
+  .modal-box > div {
+    margin-bottom: 10px !important;
+  }
 
+  .max {
+    top: -23px;
+  }
   .linkage {
     width: 60%;
     margin-left: 20px !important;

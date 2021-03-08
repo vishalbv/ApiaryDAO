@@ -67,7 +67,7 @@ const Page1 = () => {
             className="links2"
             style={{ fontSize: "1em", fontWeight: "bold" }}
           >
-            STAKING (CLAIMING) NEEDS UNLOCK
+            STAKING (CLAIMING) RESETS UNLOCK
           </div>
           <div className="links2" style={{ fontSize: ".9em" }}>
             34287 Blocks ( - 3 Days )

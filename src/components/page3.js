@@ -6,6 +6,13 @@ const Page3 = () => {
   const [modal, setModal] = useState(false);
   const [val, setVal] = useState(0);
 
+  const [status, setStatus] = useState(0);
+
+  const openPopup = (val) => {
+    setStatus(val);
+    setModal(true);
+  };
+
   return (
     <div>
       <div className="top-section">
@@ -76,7 +83,7 @@ const Page3 = () => {
             className="links2"
             style={{ fontSize: "1em", fontWeight: "bold" }}
           >
-            STAKING (CLAIMING) NEEDS UNLOCK
+            STAKING (CLAIMING) RESETS UNLOCK
           </div>
           <div className="links2" style={{ fontSize: ".9em" }}>
             34287 Blocks ( - 3 Days )
@@ -85,7 +92,7 @@ const Page3 = () => {
       </div>
       <div className="doCenter">
         <BlockA status={true} />
-        <BlockB status={false} setModal={setModal} />
+        <BlockB status={false} openPopup={openPopup} val={false} />
       </div>
       <Modal
         toggleShow={() => {
@@ -94,7 +101,12 @@ const Page3 = () => {
         }}
         show={modal}
       >
-        <SubModal setModal={setModal} val={val} setVal={setVal} />
+        <SubModal
+          setModal={setModal}
+          val={val}
+          setVal={setVal}
+          status={status}
+        />
       </Modal>
     </div>
   );
