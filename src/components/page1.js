@@ -23,21 +23,25 @@ const Page1 = () => {
         <div className="doCenter linkage">
           <div
             className="links"
-            onClick={() => (window.location.href = "docs.dao.com")}
+            onClick={() =>
+              (window.location.href = "https://docs.apiarydao.xyz")
+            }
           >
             Docs
           </div>
           <div className="seperator"></div>
           <div
             className="links"
-            onClick={() => (window.location.href = "https://t.me/DAO")}
+            onClick={() => (window.location.href = "https://t.me/ApiaryDAO")}
           >
             Telegram
           </div>
           <div className="seperator"></div>
           <div
             className="links"
-            onClick={() => (window.location.href = "https://twitter.com/DAO")}
+            onClick={() =>
+              (window.location.href = "https://twitter.com/apiarydao")
+            }
           >
             Twitter
           </div>
@@ -46,7 +50,7 @@ const Page1 = () => {
           <div className="header">ApiaryDAO</div>
           <div
             className="links2"
-            style={{ fontSize: "1.4em", marginTop: "-4px" }}
+            style={{ fontSize: "1.45em", marginTop: "-4px" }}
           >
             Stake APYD to earn HivePoints
           </div>

@@ -141,7 +141,7 @@ export const SubModal = ({ setModal, val, setVal, status }) => {
       <div style={{ width: "80%", color: "#00000066" }} className="modal-box">
         <div
           style={{
-            marginBottom: "10px",
+            marginBottom: "4px",
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
@@ -161,7 +161,7 @@ export const SubModal = ({ setModal, val, setVal, status }) => {
           <input
             type="number"
             value={val}
-            placeholder={status == 1 ? "Deposit" : "Withdraw"}
+            placeholder={status == 1 ? "DEPOSIT" : "WITHDRAW"}
             id="inputID"
             onChange={(e) => setVal(e.target.value)}
           />
