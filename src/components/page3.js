@@ -87,7 +87,7 @@ const Page3 = () => {
             className="links2"
             style={{ fontSize: "1em", fontWeight: "bold" }}
           >
-            STAKING (CLAIMING) RESETS UNLOCK
+            Staking/Claiming resets timelock
           </div>
           <div className="links2" style={{ fontSize: ".9em" }}>
             34287 Blocks ( - 3 Days )
