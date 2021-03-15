@@ -52,7 +52,7 @@ const Page1 = () => {
             className="links2"
             style={{ fontSize: "1.45em", marginTop: "-4px" }}
           >
-            Stake APYD to earn HivePoints
+            Stake APYD-BNB to earn HivePoints
           </div>
           <div
             className="block"

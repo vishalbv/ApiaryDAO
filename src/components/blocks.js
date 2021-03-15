@@ -10,7 +10,7 @@ export const BlockB = ({ status, openPopup, val }) => {
       <div className="heading">STAKED</div>
       <img src={imgB} style={{ padding: "8px", width: "69px" }} />
       <div>0.0000</div>
-      <div>APYD</div>
+      <div>APYD-BNB</div>
       {status ? (
         <div
           className="button"
@@ -85,7 +85,7 @@ export const SubModal = ({ setModal, val, setVal, status }) => {
           }}
         >
           <span>{status == 1 ? "Deposit" : "Withdraw"}</span>
-          <span style={{ marginLeft: "4vw" }}>0.0000 APYD Available</span>
+          <span style={{ marginLeft: "4vw" }}>0.0000 APYD-BNB Available</span>
         </div>
         <div
           className="doCenter input-modal"
@@ -104,7 +104,7 @@ export const SubModal = ({ setModal, val, setVal, status }) => {
                 color: "#00000095",
               }}
             >
-              APYD
+              APYD-BNB
             </span>
           </div>
           <div className="button">MAX</div>
@@ -148,7 +148,7 @@ export const SubModal = ({ setModal, val, setVal, status }) => {
           }}
         >
           <span>{""}</span>
-          <span style={{ marginLeft: "1vw" }}>0.0000 APYD Available</span>
+          <span style={{ marginLeft: "1vw" }}>0.0000 APYD-BNB Available</span>
         </div>
         <div
           className="input-box"
@@ -173,7 +173,7 @@ export const SubModal = ({ setModal, val, setVal, status }) => {
               color: "#00000095",
             }}
           >
-            APYD
+            APYD-BNB
           </span>
         </div>
         <div
